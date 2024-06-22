@@ -1,0 +1,15 @@
+name: Build
+on:
+  push:
+jobs:
+  build:
+    name: Build
+    runs-on: windows-latest
+    steps:
+      - name: Check out source code
+        uses: actions/checkout@v4
+        with:
+          ref: 2d5663c7bc0f1345bc4ad4a95c66edb7b05afb25
+
+      - name: Build
+        run: .\doit.bat -ci
