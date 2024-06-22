@@ -12,4 +12,4 @@ jobs:
           ref: 2d5663c7bc0f1345bc4ad4a95c66edb7b05afb25
 
       - name: Build
-        run: .\doit.bat -ci
+        run: .\doit.bat -build-pre-rel
